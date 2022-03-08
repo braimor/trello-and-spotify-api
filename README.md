@@ -1,24 +1,30 @@
-# README
+About This App
+Small rails program that connects with Trello and Spotify APIs creating cards since a .csv file.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Main Characteristics
+Language: Ruby 3.0.0
+Framework: Rails 6.1.4.6
 
-Things you may want to cover:
+Other Gems
+dotenv-rails
+For environment variables
+https://github.com/bkeepers/dotenv
 
-* Ruby version
+ruby-trello
+To connect with Trello's API
+https://github.com/jeremytregunna/ruby-trello
 
-* System dependencies
+rspotify
+To connect with Spotify's API
+https://github.com/guilhermesad/rspotify
 
-* Configuration
+Getting Started
+Make sure that you have Rails 6, git cli and bundle installed.
 
-* Database creation
+Clone this repo using 'git clone https://github.com/braimor/trello-and-spotify-api.git' 
+Create your .env file. You have an example at .env.template. You should be able to copy it and set your own values.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run 
+bundle install
+rails server
+rails db:seed
